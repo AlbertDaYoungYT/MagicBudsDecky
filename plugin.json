@@ -1,10 +1,10 @@
 {
-  "name": "MagicPods",
-  "author": "Aleksandr Maslov & Andrey Litvintsev",
+  "name": "MagicBuds",
+  "author": "AlbertDaYoung",
   "flags": [],
   "publish": {
-    "tags": ["bluetooth", "battery", "airpods", "beats", "headphones"],
-    "description": "Monitor the battery level of your AirPods and Beats. Easily switch between noise cancellation modes and enjoy the magic.",
+    "tags": ["bluetooth", "battery", "buds", "samsung", "headphones"],
+    "description": "Monitor the battery level of your Galaxy Buds. Easily switch between noise cancellation modes and enjoy the magic.",
     "image": "https://raw.githubusercontent.com/steam3d/MagicPodsDecky/master/docs/images/preview.png"
   }
 }
