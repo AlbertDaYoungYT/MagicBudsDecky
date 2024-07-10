@@ -52,10 +52,10 @@ export const QrLinksRouter: VFC = () => {
                 </div>
             </div>
             <div style={blockStyle}>
-                <img src={magicpodsqr} alt="Qr code to magicpods" style={imgStyle} />
+                <img src={magicpodsqr} alt="Qr code to magicbuds" style={imgStyle} />
                 <div style={container}>
-                    <img src={magicpodslogo} alt="MagicPods logo" style={iconStyle} />
-                    <div>MagicPods</div>
+                    <img src={magicpodslogo} alt="MagicBuds logo" style={iconStyle} />
+                    <div>MagicBuds</div>
                 </div>
             </div>
             <div style={blockStyle}>

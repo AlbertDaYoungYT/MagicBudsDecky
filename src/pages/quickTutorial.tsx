@@ -120,7 +120,7 @@ let discord = <a href="https://discord.com/invite/ARSm6CG7jf" target="_blank" st
                 <div className={staticClasses.Text} style={bodyStyle}>
                     <Trans
                         i18nKey="faq_tip7_description"                        
-                        values={{ mail: "MagicPods@outlook.com"}}
+                        values={{ mail: "MagicBuds@outlook.com"}}
                         components={{
                             lnk: discord,
                         }}/></div>

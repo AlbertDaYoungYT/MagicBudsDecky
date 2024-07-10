@@ -1,4 +1,4 @@
-# MagicPods✨ for Steam Deck
+# MagicBuds✨ for Steam Deck
 
 A magic plugin for the Decky Loader that allows you to control your AirPods and Beats headphones in a comfortable way.
 
@@ -35,10 +35,10 @@ A magic plugin for the Decky Loader that allows you to control your AirPods and 
 
 ## 🚀 Getting started
 
-Now that you have MagicPods, press <img src="./docs/images/dark/qam.svg#gh-light-mode-only" height=16><img src="./docs/images/light/qam.svg#gh-dark-mode-only" height=16> and go to <img src="./docs/images/dark/plug.svg#gh-light-mode-only" height=16><img src="./docs/images/light/plug.svg#gh-dark-mode-only" height=16> and select <img src="./docs/images/dark/mp.svg#gh-light-mode-only" height=16><img src="./docs/images/light/mp.svg#gh-dark-mode-only" height=16> MagicPods in the installed plugins list.
+Now that you have MagicBuds, press <img src="./docs/images/dark/qam.svg#gh-light-mode-only" height=16><img src="./docs/images/light/qam.svg#gh-dark-mode-only" height=16> and go to <img src="./docs/images/dark/plug.svg#gh-light-mode-only" height=16><img src="./docs/images/light/plug.svg#gh-dark-mode-only" height=16> and select <img src="./docs/images/dark/mp.svg#gh-light-mode-only" height=16><img src="./docs/images/light/mp.svg#gh-dark-mode-only" height=16> MagicBuds in the installed plugins list.
 
 <img src="./docs/images/dark/mp-charge.svg#gh-light-mode-only" height=16><img src="./docs/images/light/mp-charge.svg#gh-dark-mode-only" height=16> displays information about the current charge level and additional features, if supported by the headphones.  
-<img src="./docs/images/dark/mp-hd.svg#gh-light-mode-only" height=16><img src="./docs/images/light/mp-hd.svg#gh-dark-mode-only" height=16> shows headphones supported by MagicPods, here you can connect/disconnect headphones and control Bluetooth.  
+<img src="./docs/images/dark/mp-hd.svg#gh-light-mode-only" height=16><img src="./docs/images/light/mp-hd.svg#gh-dark-mode-only" height=16> shows headphones supported by MagicBuds, here you can connect/disconnect headphones and control Bluetooth.  
 <img src="./docs/images/dark/mp-sett.svg#gh-light-mode-only" height=16><img src="./docs/images/light/mp-sett.svg#gh-dark-mode-only" height=16> contains a quick reference guide and other useful information.  
 
 All you need to do is select your headphones and connect them, and the charge level and additional features will appear on the <img src="./docs/images/dark/mp-charge.svg#gh-light-mode-only" height=16><img src="./docs/images/light/mp-charge.svg#gh-dark-mode-only" height=16> tab

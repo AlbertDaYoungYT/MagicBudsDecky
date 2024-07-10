@@ -20,7 +20,7 @@ export const TabDebug: VFC<{ backend: Backend; }> = ({ backend }) => {
                             layout="below"
                             onClick={() => {
                                 Navigation.CloseSideMenus();
-                                Navigation.Navigate("/magicpods-log");
+                                Navigation.Navigate("/magicbuds-log");
                             }}>
                             Debug log
                         </ButtonItem>
@@ -116,7 +116,7 @@ export const TabDebug: VFC<{ backend: Backend; }> = ({ backend }) => {
                         <ButtonItem layout="below" onClick={async () => {
                             backend.deckyApi.toaster.toast({
                                 icon: <LogoIcon />,
-                                title: "MagicPods",
+                                title: "MagicBuds",
                                 duration: 15_000,
                                 body: t("notif_error_websocket_connection_issue")
                             })
@@ -129,7 +129,7 @@ export const TabDebug: VFC<{ backend: Backend; }> = ({ backend }) => {
                         <ButtonItem layout="below" onClick={async () => {
                             backend.deckyApi.toaster.toast({
                                 icon: <LogoIcon />,
-                                title: "MagicPods",
+                                title: "MagicBuds",
                                 duration: 15_000,
                                 body: t("notif_low_battery", { battery: 75 })
                             })

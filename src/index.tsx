@@ -205,7 +205,7 @@ export default definePlugin((serverApi: ServerAPI) => {
     if (state === BackendSocketState.ERROR) {
       backend.deckyApi.toaster.toast({
         icon: <LogoIcon />,
-        title: "MagicPods",
+        title: "MagicBuds",
         duration: 15_000,
         body: t("notif_error_websocket_connection_issue")
       })
@@ -246,7 +246,7 @@ export default definePlugin((serverApi: ServerAPI) => {
         backend.log(`Showing low battery notification ${minBattery}%`)
         backend.deckyApi.toaster.toast({
           icon: <LogoIcon />,
-          title: "MagicPods",
+          title: "MagicBuds",
           body: t("notif_low_battery", { battery: minBattery })
         })
       }
@@ -265,7 +265,7 @@ export default definePlugin((serverApi: ServerAPI) => {
   backend.log("Plugin loaded");
 
   return {
-    title: <div className={staticClasses.Title}>MagicPods</div>,
+    title: <div className={staticClasses.Title}>MagicBuds</div>,
     content: <Content backend={backend} />,
     icon: <LogoIcon />,
     onDismount() {
