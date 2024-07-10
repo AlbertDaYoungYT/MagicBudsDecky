@@ -1,7 +1,7 @@
 {
   "name": "MagicBuds",
   "author": "AlbertDaYoung",
-  "flags": [],
+  "flags": ["debug"],
   "publish": {
     "tags": ["bluetooth", "battery", "buds", "samsung", "headphones"],
     "description": "Monitor the battery level of your Galaxy Buds. Easily switch between noise cancellation modes and enjoy the magic.",
