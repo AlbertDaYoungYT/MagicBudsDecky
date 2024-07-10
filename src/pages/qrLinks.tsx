@@ -2,11 +2,11 @@ import React, { VFC } from 'react';
 
 import boostylogo from "../../assets/boosty-logo.png";
 import discordlogo from "../../assets/discord-logo.png";
-import magicpodslogo from "../../assets/magicpods-logo.png";
+import magicbudslogo from "../../assets/magicbuds-logo.png";
 
 import boostyqr from "../../assets/boosty-qrcode.png";
 import discordqr from "../../assets/discord-qrcode.png";
-import magicpodsqr from "../../assets/magicpods-qrcode.png";
+import magicbudsqr from "../../assets/magicbuds-qrcode.png";
 
 export const QrLinksRouter: VFC = () => {
 
@@ -52,9 +52,9 @@ export const QrLinksRouter: VFC = () => {
                 </div>
             </div>
             <div style={blockStyle}>
-                <img src={magicpodsqr} alt="Qr code to magicbuds" style={imgStyle} />
+                <img src={magicbudsqr} alt="Qr code to magicbuds" style={imgStyle} />
                 <div style={container}>
-                    <img src={magicpodslogo} alt="MagicBuds logo" style={iconStyle} />
+                    <img src={magicbudslogo} alt="MagicBuds logo" style={iconStyle} />
                     <div>MagicBuds</div>
                 </div>
             </div>

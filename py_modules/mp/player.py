@@ -4,7 +4,7 @@ import threading
 import os
 import signal
 
-_logger = logging.getLogger("magicpods")
+_logger = logging.getLogger("magicbuds")
 logger = logging.LoggerAdapter(_logger, {'tag': 'py'})
 
 class Player:    

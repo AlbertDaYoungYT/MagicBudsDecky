@@ -189,11 +189,11 @@ const Content: VFC<{ backend: Backend }> = ({ backend }) => {
 };
 
 export default definePlugin((serverApi: ServerAPI) => {
-  serverApi.routerHook.addRoute("/magicpods-qr-links", QrLinksRouter, {
+  serverApi.routerHook.addRoute("/magicbuds-qr-links", QrLinksRouter, {
     exact: true,
   },);
 
-  serverApi.routerHook.addRoute("/magicpods-quick-tutorial", QuickTutorialRouter, {
+  serverApi.routerHook.addRoute("/magicbuds-quick-tutorial", QuickTutorialRouter, {
     exact: true,
   },);
 
@@ -260,7 +260,7 @@ export default definePlugin((serverApi: ServerAPI) => {
   const backend = new Backend(serverApi);
   backend.onSocketConnectionChanged(onConnectionChanged);
   backend.onJsonMessageReceived(onJsonMessageReceived);
-  serverApi.routerHook.addRoute("/magicpods-log", () => (<LogRouter backend={backend} />));
+  serverApi.routerHook.addRoute("/magicbuds-log", () => (<LogRouter backend={backend} />));
   serverApi.routerHook.addGlobalComponent("BackgroundMicrophoneMute", () => (<BackgroundMicrophoneMute backend={backend} />));
   backend.log("Plugin loaded");
 
@@ -270,9 +270,9 @@ export default definePlugin((serverApi: ServerAPI) => {
     icon: <LogoIcon />,
     onDismount() {
       backend.log("onDismount");
-      serverApi.routerHook.removeRoute("/magicpods-qr-links");
-      serverApi.routerHook.removeRoute("/magicpods-tutorial");
-      serverApi.routerHook.removeRoute("/magicpods-log");
+      serverApi.routerHook.removeRoute("/magicbuds-qr-links");
+      serverApi.routerHook.removeRoute("/magicbuds-tutorial");
+      serverApi.routerHook.removeRoute("/magicbuds-log");
       serverApi.routerHook.removeGlobalComponent("BackgroundMicrophoneMute");
       backend.offSocketConnectionChanged(onConnectionChanged);
       backend.offJsonMessageReceived(onJsonMessageReceived);
