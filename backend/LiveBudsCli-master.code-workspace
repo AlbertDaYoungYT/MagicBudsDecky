@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"name": "LiveBudsCli-master",
+			"path": "."
+		},
+		{
+			"path": "../MagicBudsDecky"
+		}
+	],
+	"settings": {}
+}

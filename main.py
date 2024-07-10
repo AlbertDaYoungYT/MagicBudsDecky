@@ -8,11 +8,11 @@ import decky_plugin
 
 # Create a logger
 lvl = logging.DEBUG
-_logger = logging.getLogger("magicpods")
+_logger = logging.getLogger("magicbuds")
 _logger.setLevel(lvl)
 
 # Create a file handler and set the level to DEBUG
-file_handler = RotatingFileHandler(os.path.join(decky_plugin.DECKY_PLUGIN_LOG_DIR, "magicpodslog.txt"), mode='a', maxBytes=5*1024*1024, backupCount=0)
+file_handler = RotatingFileHandler(os.path.join(decky_plugin.DECKY_PLUGIN_LOG_DIR, "magicbudslog.txt"), mode='a', maxBytes=5*1024*1024, backupCount=0)
 file_handler.setLevel(lvl)
 
 # Create a console handler and set the level to INFO
@@ -53,7 +53,7 @@ class Plugin:
 
     async def read_logs(self):
         output = ""
-        with open(os.path.join(decky_plugin.DECKY_PLUGIN_LOG_DIR, "magicpodslog.txt")) as file:
+        with open(os.path.join(decky_plugin.DECKY_PLUGIN_LOG_DIR, "magicbudslog.txt")) as file:
             for line in (file.readlines() [-150:]):
                 output += line
         return output
@@ -80,7 +80,7 @@ class Plugin:
     async def _main(self):
         logger.debug("_main starting")
         self.settings = Settings(decky_plugin.DECKY_PLUGIN_SETTINGS_DIR)
-        self.core = CoreService(os.path.join(decky_plugin.DECKY_PLUGIN_DIR, "bin"), "MagicPodsCore", bin_logging)
+        self.core = CoreService(os.path.join(decky_plugin.DECKY_PLUGIN_DIR, "bin"), "MagicBudsCore", bin_logging)
         self.is_backend_allowed = True # Allow reconnecting socket when user using plugin
         self.player = Player(os.path.join(decky_plugin.DECKY_PLUGIN_DIR, "silence.mp3"),bin_logging)
 
