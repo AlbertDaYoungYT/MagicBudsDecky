@@ -1,13 +1,13 @@
 FROM ubuntu:22.04 AS system_stage
 
 RUN apt-get update
-RUN apt-get install rustc -y
 RUN apt-get install cargo -y
 RUN apt-get install libsystemd-dev -y
 RUN apt-get install git -y
 RUN apt-get install zlib1g-dev -y
-RUN apt-get install bluez -y
-RUN apt-get install libbluetooth-dev -y
+RUN apt-get install bluez-libs -y
+RUN apt-get install libpulse -y
+RUN apt-get install dbus -y
 RUN apt-get install python3 -y
 
 
