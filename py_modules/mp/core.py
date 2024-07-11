@@ -100,7 +100,7 @@ class CoreService(CoreBase):
     def _start(self):        
         if not self._is_runnig():
             logger.info(self.x_path)
-            self.task = subprocess.Popen(["python3", os.path.join(self.x_path, "/api")+"/main.py"], shell=False, stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
+            self.task = subprocess.Popen(["python3", self.x_path+ "main.py"], shell=False, stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
             self.thread = threading.Thread(target=self.reader, args=())
             self.thread.start()
             super()._start()          
